@@ -1,0 +1,1 @@
+09:42:39.846 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,504] - slow sql 1971 millis. SELECT 1 FROM DUAL[]
