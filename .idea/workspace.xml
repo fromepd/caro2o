@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0a23d06-1965-4526-ac9c-44342434837e" name="Changes" comment="前端基础">
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/baomidou/mybatisplus/autoconfigure/MybatisPlusProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/RuoYiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/RuoYiServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/business/AppointmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/business/ServiceItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/business/StatementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/business/StatementItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/common/CaptchaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/common/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/customer/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/customer/CustomerVisitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/CacheController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/ServerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/SysLogininforController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/SysOperlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/SysUserOnlineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/report/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/CarTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/DepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysDeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysDictDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysDictTypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysIndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysLoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysNoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysPostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysRegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/tool/SwaggerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/tool/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/BpmnInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/BpmnNodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/CarPackageAuditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/DealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/MarketingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/MarketingRewardsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/MarketingTaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/PurseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/StoreInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/TaskDoneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/java/com/ruoyi/web/controller/workflow/TaskTodoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/application-druid.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/i18n/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/afterService.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/carModel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/afterService.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/bootstrapValidator.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/carModel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/financialService.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/maintenance.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/ownerBook.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/renewalService.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/css/user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/financialService.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/activity-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/activity-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/activity-icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/background-img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/background-img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/background-img3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/car-model.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/carousel-img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/carousel-img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/change-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/comment-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/contact-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/contact-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/contact-icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/contact-icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/fault-light-icon9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-user1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-user2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-user3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-user4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-user5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-user6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/function-user7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/gift-bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/gift-bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/guide-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/guide-img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/guide-img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/guide-img3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/guide-img4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/maintenance-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/menu-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/programme-img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/programme-img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/programme_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/renewalService_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/tel-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/user-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/img/user-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/afterService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/bootstrap-table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/bootstrap-table.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/columns/bootstrap-table-fixed-columns.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/editable/bootstrap-editable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/editable/bootstrap-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/editable/bootstrap-table-editable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/editable/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/editable/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/export/bootstrap-table-export.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/export/tableExport.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/mobile/bootstrap-table-mobile.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/print/bootstrap-table-print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/reorder-columns/bootstrap-table-reorder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/reorder-columns/jquery.dragtable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/reorder-row/bootstrap-table-reorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/reorder-row/jquery.tablednd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/resizable/bootstrap-table-resizable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/extensions/resizable/jquery.resizableColumns.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/locale/bootstrap-table-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/bootstrapValidator.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/carModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/financialService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/mobile/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/mobile/need/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/theme/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/theme/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/theme/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/theme/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/theme/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/layer/theme/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/maintenance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/ownerBook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/renewalService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/js/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/json/carModel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/maintenance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/ownerBook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/renewalService.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/src/main/resources/static/frontend/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/annotation/Anonymous.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/annotation/DataScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/annotation/DataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/annotation/Excel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/annotation/Excels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/annotation/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/annotation/RateLimiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/annotation/RepeatSubmit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/config/MiniIoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/config/RuoYiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/constant/CacheConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/constant/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/constant/GenConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/constant/HttpStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/constant/ScheduleConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/constant/UserConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/AjaxResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/TreeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/TreeSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/entity/SysDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/entity/SysDictData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/entity/SysDictType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/entity/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/entity/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/entity/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/model/LoginBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/model/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/model/RegisterBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/page/PageDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/page/TableDataInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/page/TableSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/redis/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/service/SmsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/service/impl/LocationSmsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/text/CharsetKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/text/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/core/text/StrFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/enums/BusinessStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/enums/BusinessType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/enums/DataSourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/enums/HttpMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/enums/LimitType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/enums/OperatorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/DemoModeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/GlobalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/UtilException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/base/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/file/FileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/file/FileNameLengthLimitExceededException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/file/FileSizeLimitExceededException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/file/InvalidExtensionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/job/TaskException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/user/CaptchaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/user/CaptchaExpireException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/user/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/user/UserPasswordNotMatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/exception/user/UserPasswordRetryLimitExceedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/filter/RepeatableFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/filter/RepeatedlyRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/filter/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/Arith.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/DictUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/ExceptionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/LogUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/MessageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/PageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/SecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/Threads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/bean/BeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/bean/BeanValidators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/file/FileTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/file/FileUploadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/file/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/file/ImageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/file/MimeTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/html/EscapeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/html/HTMLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/http/HttpHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/http/HttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/ip/AddressUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/ip/IpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/poi/ExcelHandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/poi/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/reflect/ReflectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/spring/SpringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/sql/SqlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/uuid/IdUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/uuid/Seq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/utils/uuid/UUID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/xss/Xss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/src/main/java/com/ruoyi/common/xss/XssValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/aspectj/DataScopeAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/aspectj/DataSourceAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/aspectj/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/aspectj/RateLimiterAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/CaptchaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/FastJson2JsonRedisSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/KaptchaTextCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/ResourcesConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/ServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/ThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/properties/DruidProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/config/properties/PermitAllUrlProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/datasource/DynamicDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/datasource/DynamicDataSourceContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/interceptor/RepeatSubmitInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/interceptor/impl/SameUrlDataInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/manager/AsyncManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/manager/ShutdownManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/manager/factory/AsyncFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/security/context/AuthenticationContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/security/filter/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/security/handle/AuthenticationEntryPointImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/security/handle/LogoutSuccessHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/domain/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/domain/server/Cpu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/domain/server/Jvm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/domain/server/Mem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/domain/server/Sys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/domain/server/SysFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/service/SysLoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/service/SysPasswordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/service/SysPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/service/SysRegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/src/main/java/com/ruoyi/framework/web/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/config/GenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/controller/GenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/domain/GenTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/domain/GenTableColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/mapper/GenTableColumnMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/mapper/GenTableMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/service/GenTableColumnServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/service/GenTableServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/service/IGenTableColumnService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/service/IGenTableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/util/GenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/util/VelocityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/java/com/ruoyi/generator/util/VelocityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/generator.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/mapper/generator/GenTableColumnMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/mapper/generator/GenTableMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/controller.java.0.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/controller.java.1.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/domain.java.0.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/domain.java.1.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/mapper.java.0.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/mapper.java.1.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/service.java.0.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/service.java.1.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/serviceImpl.java.0.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/serviceImpl.java.1.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/sub-domain.java.0.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/java/sub-domain.java.1.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/js/api.js.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/sql/sql.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/vue/index-tree.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/vue/index.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/vue/v3/index-tree.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/vue/v3/index.vue.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/vue/v3/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/xml/mapper.xml.0.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/src/main/resources/vm/xml/mapper.xml.1.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/config/ScheduleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/controller/SysJobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/controller/SysJobLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/domain/SysJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/domain/SysJobLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/mapper/SysJobLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/mapper/SysJobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/service/ISysJobLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/service/ISysJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/service/impl/SysJobLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/service/impl/SysJobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/task/RyTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/util/AbstractQuartzJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/util/CronUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/util/JobInvokeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/util/QuartzDisallowConcurrentExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/util/QuartzJobExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/java/com/ruoyi/quartz/util/ScheduleUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/resources/mapper/quartz/SysJobLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/src/main/resources/mapper/quartz/SysJobMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/domain/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/domain/ServiceItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/domain/Statement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/domain/StatementItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/mapper/AppointmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/mapper/ServiceItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/mapper/StatementItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/mapper/StatementMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/query/AppointmentQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/query/QueryObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/query/ServiceItemQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/query/StatementItemQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/query/StatementQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/service/IAppointmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/service/IServiceItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/service/IStatementItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/service/IStatementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/service/impl/AppointmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/service/impl/ServiceItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/service/impl/StatementItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/business/service/impl/StatementServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/customer/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/customer/domain/CustomerVisit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/customer/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/customer/mapper/CustomerVisitMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/customer/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/customer/service/ICustomerVisitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/customer/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/customer/service/impl/CustomerVisitServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/report/domain/QueryObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/report/domain/ResultBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/report/mapper/IReportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/report/service/IReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/report/service/impl/ReportServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/CarType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/DictData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/HistoricComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysLogininfor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysNotice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysOperLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysRoleDept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysUserOnline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysUserPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/vo/MetaVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/vo/ReservationVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/vo/RouterVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/domain/vo/ServiceItemAuditVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/CarTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/DepartmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDictDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDictTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysLogininforMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysNoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysOperLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysPostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysRoleDeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysUserPostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ICarTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/IDepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDictDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDictTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysLogininforService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysNoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysOperLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysPostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysUserOnlineService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/CarTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysConfigServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDictDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDictTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysLogininforServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysNoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysOperLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysPostServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysUserOnlineServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/java/com/ruoyi/system/util/PhoneUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/business/AppointmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/business/CarTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/business/ServiceItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/business/StatementItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/business/StatementMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/customer/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/customer/CustomerVisitMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/report/IReportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysConfigMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysDictDataMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysDictTypeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysLogininforMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysNoticeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysOperLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysRoleDeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysRoleMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysUserPostMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/src/main/resources/mapper/system/SysUserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/BpmnInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/BpmnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/CarPackageAudit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/Deal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/DepartmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/Marketing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/MarketingRewards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/MarketingTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/Purse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/StoreInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/vo/CarPackageAuditVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/domain/vo/HistoricActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/BpmnInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/BpmnNodeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/CarPackageAuditMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/DealMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/DepartmentTestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/MarketingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/MarketingRewardsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/MarketingTaskMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/PurseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/mapper/StoreInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IBpmnInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IBpmnNodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/ICarPackageAuditService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IDealService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IDoneTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IMarketingRewardsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IMarketingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IMarketingTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IPurseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/IStoreInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/ITodoTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/BpmnInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/BpmnNodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/CarPackageAuditServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/DealServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/DoneTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/MarketingRewardsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/MarketingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/MarketingTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/PurseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/StoreInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/java/com/ruoyi/workflow/service/impl/TodoTaskServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/BpmnInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/BpmnNodeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/CarPackageAuditMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/DealMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/DepartmentTestMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/MarketingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/MarketingRewardsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/MarketingTaskMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/PurseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/src/main/resources/mapper/workflow/StoreInfoMapper.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Aspect" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="wby" />
+                    <option name="lastUsedInstant" value="1681869044" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1681869043" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="禁止乱修改代码" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\apache-maven-3.6.1-bin\maven-repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HqwwPXkPkMk8xgECC78XiqR59E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/workspace-parent/caro2o&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.20689656&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6c258f9b6d16eeb0de0809bd02b187c7&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\aaaaaa\caro2o\caro2o-admin-ui\src\api\workflow" />
+      <recent name="E:\aaaaaa\caro2o\caro2o-admin-ui\src\views\workflow\task" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace-parent\caro2o\caro2o-admin-ui\src\views\workflow\rewards" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ruoyi.workflow.service.impl" />
+      <recent name="com.ruoyi.workflow.service" />
+      <recent name="com.ruoyi.web.controller.workflow" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.RuoYiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/caro2o-admin-ui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0a23d06-1965-4526-ac9c-44342434837e" name="Changes" comment="" />
+      <created>1669026160167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669026160167</updated>
+      <workItem from="1669026161577" duration="307000" />
+      <workItem from="1669027407457" duration="229000" />
+      <workItem from="1669029785521" duration="1202000" />
+      <workItem from="1669031562425" duration="1154000" />
+      <workItem from="1669033082477" duration="747000" />
+      <workItem from="1669078746970" duration="5515000" />
+      <workItem from="1669099319827" duration="183000" />
+      <workItem from="1669099530941" duration="70000" />
+      <workItem from="1669099617337" duration="2416000" />
+      <workItem from="1669103399268" duration="1030000" />
+      <workItem from="1669104460859" duration="654000" />
+      <workItem from="1669105454562" duration="15985000" />
+      <workItem from="1669164266257" duration="5833000" />
+      <workItem from="1669186420806" duration="145000" />
+      <workItem from="1669186588294" duration="2968000" />
+      <workItem from="1669250964017" duration="22008000" />
+      <workItem from="1669425694825" duration="2753000" />
+      <workItem from="1669433260414" duration="1348000" />
+      <workItem from="1669446150354" duration="3377000" />
+      <workItem from="1669459825632" duration="14000" />
+      <workItem from="1669461119208" duration="2033000" />
+      <workItem from="1673749627093" duration="501000" />
+      <workItem from="1674546341896" duration="3175000" />
+      <workItem from="1674979421971" duration="16373000" />
+      <workItem from="1675052125208" duration="8504000" />
+      <workItem from="1675093283331" duration="1300000" />
+      <workItem from="1675168036547" duration="132000" />
+      <workItem from="1675168426748" duration="3049000" />
+      <workItem from="1675213132929" duration="12490000" />
+      <workItem from="1675230111409" duration="18688000" />
+      <workItem from="1675305116015" duration="1701000" />
+      <workItem from="1675338114345" duration="1063000" />
+      <workItem from="1675387157799" duration="729000" />
+      <workItem from="1675388333172" duration="7617000" />
+      <workItem from="1675681617165" duration="602000" />
+      <workItem from="1675840760284" duration="191000" />
+      <workItem from="1676538687019" duration="594000" />
+      <workItem from="1677570239256" duration="803000" />
+      <workItem from="1677650778301" duration="284000" />
+      <workItem from="1678156437350" duration="132000" />
+      <workItem from="1678159722830" duration="37000" />
+      <workItem from="1678160110383" duration="288000" />
+      <workItem from="1678160483944" duration="110000" />
+      <workItem from="1678169721779" duration="127000" />
+      <workItem from="1678271885870" duration="1420000" />
+      <workItem from="1678513588848" duration="1339000" />
+      <workItem from="1679401599663" duration="1551000" />
+      <workItem from="1679821437095" duration="1999000" />
+      <workItem from="1680772978670" duration="507000" />
+      <workItem from="1681126307628" duration="995000" />
+      <workItem from="1681702796544" duration="799000" />
+      <workItem from="1681715534535" duration="1353000" />
+      <workItem from="1681722647361" duration="4000" />
+      <workItem from="1681723234376" duration="2000" />
+      <workItem from="1681785933340" duration="1513000" />
+      <workItem from="1681799226559" duration="959000" />
+      <workItem from="1681801382881" duration="766000" />
+      <workItem from="1681812763888" duration="93000" />
+      <workItem from="1681867850871" duration="2118000" />
+      <workItem from="1681871284441" duration="560000" />
+      <workItem from="1681871875023" duration="3601000" />
+      <workItem from="1686036938887" duration="4777000" />
+      <workItem from="1686046596305" duration="128000" />
+      <workItem from="1686710042275" duration="342000" />
+      <workItem from="1686710392267" duration="837000" />
+    </task>
+    <task id="LOCAL-00001" summary="0.0">
+      <created>1669168227219</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669168227219</updated>
+    </task>
+    <task id="LOCAL-00002" summary="测试实现练习">
+      <created>1669425951055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669425951055</updated>
+    </task>
+    <task id="LOCAL-00003" summary="redis 密码修改">
+      <created>1674980305343</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674980305343</updated>
+    </task>
+    <task id="LOCAL-00004" summary="营销活动crud">
+      <created>1675002678840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675002678841</updated>
+    </task>
+    <task id="LOCAL-00005" summary="营销任务crud">
+      <created>1675003478359</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675003478359</updated>
+    </task>
+    <task id="LOCAL-00006" summary="营销奖励crud">
+      <created>1675004388858</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675004388858</updated>
+    </task>
+    <task id="LOCAL-00007" summary="时间类型得修改">
+      <created>1675068891556</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675068891556</updated>
+    </task>
+    <task id="LOCAL-00008" summary="营销任务完善">
+      <created>1675068952603</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675068952603</updated>
+    </task>
+    <task id="LOCAL-00009" summary="营销活动前端进行时间判断">
+      <created>1675070206237</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675070206237</updated>
+    </task>
+    <task id="LOCAL-00010" summary="营销奖励用户选择前端进行判断">
+      <created>1675094288767</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675094288767</updated>
+    </task>
+    <task id="LOCAL-00011" summary="钱包模块">
+      <created>1675305330276</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675305330277</updated>
+    </task>
+    <task id="LOCAL-00012" summary="钱包模块">
+      <created>1686710087816</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686710087816</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="0.0" />
+    <MESSAGE value="测试实现练习" />
+    <MESSAGE value="redis 密码修改" />
+    <MESSAGE value="营销活动crud" />
+    <MESSAGE value="营销任务crud" />
+    <MESSAGE value="营销奖励crud" />
+    <MESSAGE value="时间类型得修改" />
+    <MESSAGE value="营销任务完善" />
+    <MESSAGE value="营销活动前端进行时间判断" />
+    <MESSAGE value="营销奖励用户选择前端进行判断" />
+    <MESSAGE value="钱包模块" />
+    <MESSAGE value="前端基础" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端基础" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

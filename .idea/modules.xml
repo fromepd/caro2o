@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/caro2o.iml" filepath="$PROJECT_DIR$/.idea/caro2o.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/ruoyi-admin.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/ruoyi-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/ruoyi-common.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/ruoyi-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/ruoyi-framework.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/ruoyi-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/ruoyi-generator.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-generator/ruoyi-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/ruoyi-quartz.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-quartz/ruoyi-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/ruoyi-system.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-system/ruoyi-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/ruoyi-workflow.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-workflow/ruoyi-workflow.iml" />
+    </modules>
+  </component>
+</project>
