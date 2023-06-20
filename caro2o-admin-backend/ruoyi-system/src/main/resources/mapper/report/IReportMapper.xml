@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ruoyi.report.mapper.IReportMapper">
+    <!--报表1:店铺收入的查询-->
+    <select id="storeIncome" resultType="com.ruoyi.report.domain.ResultBean">
+        <choose>
+            <!--按天分组-->
+            <when test="queryObject.dateStatus==0">
+                SELECT DATE_FORMAT(pay_time,'%Y年%m月%d日')as statisticalDate,SUM(total_amount-discount_amount) as statisticalAmount
+                FROM
+                bus_statement b
+                <where>
+                    <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                        pay_time&gt;=#{queryObject.startTime} AND pay_time&lt;=#{queryObject.endTime}
+                    </if>
+                </where>
+                GROUP BY
+                statisticalDate
+                ORDER BY
+                statisticalDate desc
+            </when>
+            <!--按周分组-->
+            <when test="queryObject.dateStatus==1">
+                SELECT SUM(total_amount-discount_amount) as statisticalAmount ,CONCAT(DATE_FORMAT(pay_time,'%Y年'),'第',WEEK(DATE_FORMAT(pay_time,'%Y-%m-%d'),1),'周')as s,
+                CONCAT(DATE_FORMAT(date_sub(pay_time,INTERVAL WEEKDAY(pay_time) + 0 DAY),'%Y-%m-%d'),'至',max(DATE_FORMAT(pay_time,'%Y-%m-%d')),' ',DATE_FORMAT(pay_time,'%Y年'),'第',WEEK(DATE_FORMAT(pay_time,'%Y-%m-%d'),1),'周')as statisticalDate
+                FROM bus_statement
+                <where>
+                    <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                        pay_time&gt;=#{queryObject.startTime} AND pay_time&lt;=#{queryObject.endTime}
+                    </if>
+                </where>
+                GROUP BY
+                s
+                ORDER BY
+                pay_time DESC
+            </when>
+            <!--按月分组-->
+            <when test="queryObject.dateStatus==2">
+                SELECT DATE_FORMAT(pay_time,'%Y年%m月')as statisticalDate,SUM(total_amount-discount_amount)as statisticalAmount
+                FROM
+                bus_statement b
+                <where>
+                    <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                        pay_time&gt;=#{queryObject.startTime} AND pay_time&lt;=#{queryObject.endTime}
+                    </if>
+                </where>
+                GROUP BY
+                statisticalDate
+                ORDER BY
+                statisticalDate desc
+            </when>
+            <!--按年分组-->
+            <when test="queryObject.dateStatus==3">
+                SELECT DATE_FORMAT(pay_time,'%Y年')as statisticalDate,SUM(total_amount-discount_amount) as statisticalAmount
+                FROM
+                bus_statement b
+                <where>
+                    <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                        pay_time&gt;=#{queryObject.startTime} AND pay_time&lt;=#{queryObject.endTime}
+                    </if>
+                </where>
+                GROUP BY
+                statisticalDate
+                ORDER BY
+                statisticalDate desc
+            </when>
+        </choose>
+    </select>
+
+    <!--店铺单消费列表-->
+    <select id="shopConsumption" resultType="com.ruoyi.report.domain.ResultBean">
+        <choose>
+            <!--查看的是结算单-->
+            <when test="queryObject.serviceStatus==0">
+                <choose>
+                    <!--按天分组-->
+                    <when test="queryObject.dateStatus==0">
+                        SELECT count(1) as orderCount,DATE_FORMAT(pay_time,'%Y年%m月%d日')as statisticalDate
+                        FROM
+                        bus_statement b
+                        <where>
+                            <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                                pay_time&gt;=#{queryObject.startTime} AND pay_time&lt;=#{queryObject.endTime}
+                            </if>
+                        </where>
+                        GROUP BY
+                        statisticalDate
+                        ORDER BY
+                        statisticalDate desc
+                    </when>
+                    <!--按周分组-->
+                    <when test="queryObject.dateStatus==1">
+                        SELECT  count(1) as orderCount,CONCAT(DATE_FORMAT(pay_time,'%Y年'),'第',WEEK(DATE_FORMAT(pay_time,'%Y-%m-%d'),1),'周')as s,
+                        CONCAT(DATE_FORMAT(date_sub(pay_time,INTERVAL WEEKDAY(pay_time) + 0 DAY),'%Y-%m-%d'),'至',max(DATE_FORMAT(pay_time,'%Y-%m-%d')),' ',DATE_FORMAT(pay_time,'%Y年'),'第',WEEK(DATE_FORMAT(pay_time,'%Y-%m-%d'),1),'周')as statisticalDate
+                        FROM bus_statement
+                        <where>
+                            <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                                pay_time&gt;=#{queryObject.startTime} AND pay_time&lt;=#{queryObject.endTime}
+                            </if>
+                        </where>
+                        GROUP BY
+                        s
+                        ORDER BY
+                        statisticalDate DESC
+                    </when>
+                    <!--按月分组-->
+                    <when test="queryObject.dateStatus==2">
+                        SELECT  count(1) as orderCount,DATE_FORMAT(pay_time,'%Y年%m月')as statisticalDate
+                        FROM
+                        bus_statement b
+                        <where>
+                            <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                                pay_time&gt;=#{queryObject.startTime} AND pay_time&lt;=#{queryObject.endTime}
+                            </if>
+                        </where>
+                        GROUP BY
+                        statisticalDate
+                        ORDER BY
+                        statisticalDate desc
+                    </when>
+                    <!--按年分组-->
+                    <when test="queryObject.dateStatus==3">
+                        SELECT  count(1) as orderCount,DATE_FORMAT(pay_time,'%Y年')as statisticalDate
+                        FROM
+                        bus_statement b
+                        <where>
+                            <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                                pay_time&gt;=#{queryObject.startTime} AND pay_time&lt;=#{queryObject.endTime}
+                            </if>
+                        </where>
+                        GROUP BY
+                        statisticalDate
+                        ORDER BY
+                        statisticalDate desc
+                    </when>
+                </choose>
+            </when>
+            <!--查看的是预约单-->
+            <when test="queryObject.serviceStatus==1">
+                <choose>
+                    <!--按天分组-->
+                    <when test="queryObject.dateStatus==0">
+                        SELECT count(1) as orderCount,DATE_FORMAT(appointment_time,'%Y年%m月%d日')as statisticalDate
+                        FROM
+                        bus_appointment
+                        <where>
+                            <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                                appointment_time&gt;=#{queryObject.startTime} AND appointment_time&lt;=#{queryObject.endTime}
+                            </if>
+                        </where>
+                        GROUP BY
+                        statisticalDate
+                        ORDER BY
+                        statisticalDate desc
+                    </when>
+                    <!--按周分组-->
+                    <when test="queryObject.dateStatus==1">
+                        SELECT  count(1) as orderCount,CONCAT(DATE_FORMAT(appointment_time,'%Y年'),'第',WEEK(DATE_FORMAT(appointment_time,'%Y-%m-%d'),1),'周')as s,
+                        CONCAT(DATE_FORMAT(date_sub(appointment_time,INTERVAL WEEKDAY(appointment_time) + 0 DAY),'%Y-%m-%d'),'至',max(DATE_FORMAT(appointment_time,'%Y-%m-%d')),' ',DATE_FORMAT(appointment_time,'%Y年'),'第',WEEK(DATE_FORMAT(appointment_time,'%Y-%m-%d'),1),'周')as statisticalDate
+                        FROM bus_appointment
+                        <where>
+                            <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                                appointment_time&gt;=#{queryObject.startTime} AND appointment_time&lt;=#{queryObject.endTime}
+                            </if>
+                        </where>
+                        GROUP BY
+                        s
+                        ORDER BY
+                        appointment_time DESC
+                    </when>
+                    <!--按月分组-->
+                    <when test="queryObject.dateStatus==2">
+                        SELECT  count(1) as orderCount,DATE_FORMAT(appointment_time,'%Y年%m月')as statisticalDate
+                        FROM
+                        bus_appointment
+                        <where>
+                            <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                                appointment_time&gt;=#{queryObject.startTime} AND appointment_time&lt;=#{queryObject.endTime}
+                            </if>
+                        </where>
+                        GROUP BY
+                        statisticalDate
+                        ORDER BY
+                        statisticalDate desc
+                    </when>
+                    <!--按年分组-->
+                    <when test="queryObject.dateStatus==3">
+                        SELECT  count(1) as orderCount,DATE_FORMAT(appointment_time,'%Y年')as statisticalDate
+                        FROM
+                        bus_appointment
+                        <where>
+                            <if test="queryObject.startTIme!=null and queryObject.endTime!=null">
+                                appointment_time&gt;=#{queryObject.startTime} AND appointment_time&lt;=#{queryObject.endTime}
+                            </if>
+                        </where>
+                        GROUP BY
+                        statisticalDate
+                        ORDER BY
+                        statisticalDate desc
+                    </when>
+                </choose>
+            </when>
+        </choose>
+    </select>
+    <!--客户消费报表:
+    根据消费单的客户名称,手机号统计,统计出消费金额,从大到小排序
+    高级查询支持结算时间开始-结束查询
+    字段:手机号,消费金额-->
+    <select id="customerConsumeReport" resultType="com.ruoyi.report.domain.ResultBean">
+        SELECT customer_phone as customerPhone,SUM(total_amount-discount_amount) as statisticalAmount FROM
+        bus_statement
+        <where>
+            <if test="queryObject.customerName!=null">
+                customer_name=#{queryObject.customerName}
+            </if>
+            <if test="queryObject.customerPhone!=null">
+                and
+                customer_phone=#{queryObject.customerPhone}
+            </if>
+            <if test="queryObject.startTime!=null">
+                and pay_time&gt;=#{queryObject.startTime}
+            </if>
+            <if test="queryObject.endTime!=null">
+                and pay_time&lt;=#{queryObject.endTime}
+            </if>
+        </where>
+        GROUP BY customer_phone
+        ORDER BY statisticalAmount  asc
+    </select>
+
+
+
+</mapper>

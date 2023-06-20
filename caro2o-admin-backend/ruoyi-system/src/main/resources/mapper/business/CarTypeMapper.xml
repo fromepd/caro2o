@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.CarTypeMapper">
+    
+    <resultMap type="CarType" id="CarTypeResult">
+        <result property="id"    column="id"    />
+        <result property="carName"    column="car_name"    />
+        <result property="carSeries"    column="car_series"    />
+        <result property="image"    column="image"    />
+        <result property="price"    column="price"    />
+    </resultMap>
+
+    <sql id="selectCarTypeVo">
+        select id, car_name, car_series, image, price from car_type
+    </sql>
+
+    <select id="selectCarTypeList" parameterType="CarType" resultMap="CarTypeResult">
+        <include refid="selectCarTypeVo"/>
+        <where>  
+            <if test="carName != null  and carName != ''"> and car_name like concat('%', #{carName}, '%')</if>
+            <if test="carSeries != null  and carSeries != ''"> and car_series = #{carSeries}</if>
+            <if test="image != null  and image != ''"> and image = #{image}</if>
+            <if test="price != null "> and price = #{price}</if>
+        </where>
+    </select>
+
+
+    <select id="selectTypeName" parameterType="CarType" resultMap="CarTypeResult">
+        select distinct car_name from car_type
+    </select>
+    
+    <select id="selectCarTypeById" parameterType="Long" resultMap="CarTypeResult">
+        <include refid="selectCarTypeVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertCarType" parameterType="CarType" useGeneratedKeys="true" keyProperty="id">
+        insert into car_type
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="carName != null">car_name,</if>
+            <if test="carSeries != null">car_series,</if>
+            <if test="image != null">image,</if>
+            <if test="price != null">price,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="carName != null">#{carName},</if>
+            <if test="carSeries != null">#{carSeries},</if>
+            <if test="image != null">#{image},</if>
+            <if test="price != null">#{price},</if>
+         </trim>
+    </insert>
+
+    <update id="updateCarType" parameterType="CarType">
+        update car_type
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="carName != null">car_name = #{carName},</if>
+            <if test="carSeries != null">car_series = #{carSeries},</if>
+            <if test="image != null">image = #{image},</if>
+            <if test="price != null">price = #{price},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteCarTypeById" parameterType="Long">
+        delete from car_type where id = #{id}
+    </delete>
+
+    <delete id="deleteCarTypeByIds" parameterType="String">
+        delete from car_type where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

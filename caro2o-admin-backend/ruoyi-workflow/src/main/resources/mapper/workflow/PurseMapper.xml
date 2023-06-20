@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.workflow.mapper.PurseMapper">
+
+    <resultMap type="Purse" id="PurseResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="balance"    column="balance"    />
+        <result property="revenue"    column="revenue"    />
+        <result property="expenditure"    column="expenditure"    />
+        <result property="rulePurse"    column="rule_purse"    />
+    </resultMap>
+
+  <sql id="selectPurseVo">
+    select id, user_id, balance, revenue, expenditure, rule_purse from purse
+  </sql>
+
+  <select id="selectPurseList" parameterType="Purse" resultMap="PurseResult">
+    <include refid="selectPurseVo"/>
+    <where>
+                  <if test="balance != null "> and balance = #{balance}</if>
+                  <if test="rulePurse != null  and rulePurse != ''"> and rule_purse = #{rulePurse}</if>
+    </where>
+  </select>
+</mapper>

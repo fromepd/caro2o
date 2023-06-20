@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.workflow.mapper.MarketingTaskMapper">
+
+    <resultMap type="MarketingTask" id="MarketingTaskResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="function"    column="function"    />
+        <result property="joinLimit"    column="join_limit"    />
+        <result property="triesLimit"    column="tries_limit"    />
+    </resultMap>
+
+  <sql id="selectMarketingTaskVo">
+    select id, name, function, join_limit, tries_limit from marketing_task
+  </sql>
+
+  <select id="selectMarketingTaskList" parameterType="MarketingTask" resultMap="MarketingTaskResult">
+    <include refid="selectMarketingTaskVo"/>
+    <where>
+                  <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+    </where>
+  </select>
+</mapper>

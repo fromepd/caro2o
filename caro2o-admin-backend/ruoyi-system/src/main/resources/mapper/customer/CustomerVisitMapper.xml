@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.customer.mapper.CustomerVisitMapper">
+    
+    <resultMap type="CustomerVisit" id="CustomerVisitResult">
+        <result property="id"    column="id"    />
+        <result property="customerId"    column="customer_id"    />
+        <result property="customerName"    column="customer_name"    />
+        <result property="visitMethod"    column="visit_method"    />
+        <result property="visitCause"    column="visit_cause"    />
+        <result property="visitResult"    column="visit_result"    />
+        <result property="visitDate"    column="visit_date"    />
+        <result property="inputUserId"    column="input_user_id"    />
+        <result property="inputUserName"    column="input_user_name"    />
+        <result property="entryTime"    column="entry_time"    />
+    </resultMap>
+
+    <sql id="selectBusCusCareVo">
+        select a.id, a.customer_id, b.name as customer_name, a.visit_method, a.visit_cause,
+               a.visit_result, a.visit_date, a.input_user_id, c.nick_name as input_user_name,  a.entry_time
+        from bus_customer_visit a
+        left join bus_customer b on a.customer_id = b.id
+        left join sys_user c on a.input_user_id  = c.user_id
+    </sql>
+
+    <select id="selectCustomerVisitList" parameterType="CustomerVisit" resultMap="CustomerVisitResult">
+        <include refid="selectBusCusCareVo"/>
+        <where>  
+            <if test="customerId != null"> and a.customer_id = #{visitCustomer}</if>
+            <if test="visitMethod != null and visitMethod != ''"> and a.visit_method = #{visitMethod}</if>
+            <if test="inputUserId != null"> and a.input_user_id = #{inputUserId}</if>
+            <if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+                AND date_format(a.entry_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+                AND date_format(a.entry_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+        </where>
+    </select>
+    
+    <select id="selectCustomerVisitById" parameterType="Long" resultMap="CustomerVisitResult">
+        <include refid="selectBusCusCareVo"/>
+        where a.id = #{id}
+    </select>
+        
+    <insert id="insertCustomerVisit" parameterType="CustomerVisit">
+        insert into bus_customer_visit
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">id,</if>
+            <if test="customerId != null">customer_id,</if>
+            <if test="visitMethod != null and visitMethod != ''">visit_method,</if>
+            <if test="visitCause != null and visitCause != ''">visit_cause,</if>
+            <if test="visitResult != null">visit_result,</if>
+            <if test="visitDate != null">visit_date,</if>
+            <if test="inputUserId != null">input_user_id,</if>
+            <if test="entryTime != null">entry_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id},</if>
+            <if test="customerId != null">#{customerId},</if>
+            <if test="visitMethod != null and visitMethod != ''">#{visitMethod},</if>
+            <if test="visitCause != null and visitCause != ''">#{visitCause},</if>
+            <if test="visitResult != null and visitCause != ''">#{visitResult},</if>
+            <if test="visitDate != null">#{visitDate},</if>
+            <if test="inputUserId != null">#{inputUserId},</if>
+            <if test="entryTime != null">#{entryTime},</if>
+         </trim>
+    </insert>
+</mapper>

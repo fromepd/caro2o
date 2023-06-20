@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.workflow.mapper.MarketingRewardsMapper">
+
+    <resultMap type="MarketingRewards" id="MarketingRewardsResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="relatedProducts"    column="related_products"    />
+        <result property="probability"    column="probability"    />
+        <result property="img"    column="img"    />
+    </resultMap>
+
+  <sql id="selectMarketingRewardsVo">
+    select id, name, related_products, probability, img from marketing_rewards
+  </sql>
+
+  <select id="selectMarketingRewardsList" parameterType="MarketingRewards" resultMap="MarketingRewardsResult">
+    <include refid="selectMarketingRewardsVo"/>
+    <where>
+                  <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+    </where>
+  </select>
+</mapper>

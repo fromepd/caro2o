@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.StoreInfoMapper">
+
+    <resultMap type="StoreInfo" id="StoreInfoResult">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="intro" column="intro"/>
+        <result property="businessScope" column="business_scope"/>
+        <result property="contact" column="contact"/>
+        <result property="address" column="address"/>
+        <result property="openingTime" column="opening_time"/>
+        <result property="closingTime" column="closing_time"/>
+        <result property="managerId" column="manager_id"/>
+        <result property="managerName" column="manager_name"/>
+        <result property="managerTel" column="manager_tel"/>
+        <result property="status" column="status"/>
+        <result property="creatorId" column="creator_id"/>
+        <result property="createdTime" column="created_time"/>
+        <result property="updatorId" column="updator_id"/>
+        <result property="updatedTime" column="updated_time"/>
+    </resultMap>
+
+    <sql id="selectStoreInfoVo">
+        select id,
+               name,
+               intro,
+               business_scope,
+               contact,
+               address,
+               opening_time,
+               closing_time,
+               manager_id,
+               manager_name,
+               manager_tel,
+               status,
+               creator_id,
+               created_time,
+               updator_id,
+               updated_time
+        from bus_store_info
+    </sql>
+    <update id="removeBatchById">
+        update bus_store_info set status = 2
+        where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </update>
+
+
+    <select id="selectStoreInfoList" parameterType="StoreInfo" resultMap="StoreInfoResult">
+        <include refid="selectStoreInfoVo"/>
+        <where>
+            <if test="name != null  and name != ''">and name like concat('%', #{name}, '%')</if>
+            <if test="managerId != null ">and manager_id = #{managerId}</if>
+            <if test="status != null ">and status = #{status}</if>
+            <if test="status == null ">
+                and status != 2
+            </if>
+        </where>
+    </select>
+</mapper>

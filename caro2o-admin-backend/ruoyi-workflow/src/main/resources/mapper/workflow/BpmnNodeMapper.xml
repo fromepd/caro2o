@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.workflow.mapper.BpmnNodeMapper">
+
+    <resultMap type="BpmnNode" id="BpmnNodeResult">
+        <result property="id" column="id"/>
+        <result property="bpmnInfoId" column="bpmn_info_id"/>
+        <result property="nodeKey" column="node_key"/>
+        <result property="nodeDesc" column="node_desc"/>
+    </resultMap>
+
+    <sql id="selectBpmnNodeVo">
+        select id, bpmn_info_id, node_key, node_desc
+        from bus_bpmn_node
+    </sql>
+
+    <insert id="insertRelation">
+        insert into bus_bpmn_auditor values
+        <foreach collection="auditors" separator="," item="userId">
+            (#{userId}, #{nodeId})
+        </foreach>
+    </insert>
+
+    <delete id="deleteRelation">
+        delete from bus_bpmn_auditor where node_id = #{id}
+    </delete>
+
+    <select id="selectBpmnNodeList" parameterType="BpmnNode" resultMap="BpmnNodeResult">
+        <include refid="selectBpmnNodeVo"/>
+        <where>
+            bpmn_info_id = #{bpmnInfoId}
+            <if test="nodeKey != null  and nodeKey != ''">and node_key like concat('%', #{nodeKey}, '%')</if>
+        </where>
+    </select>
+
+    <select id="selectAuditorsByNodeId" resultType="java.lang.Long">
+        select user_id from bus_bpmn_auditor where node_id = #{id}
+    </select>
+
+    <select id="selectUsersByNodeKey" resultType="SysUser">
+        select a.user_id userId, u.user_name userName, u.nick_name nickName
+        from bus_bpmn_auditor a
+            join bus_bpmn_node n on a.node_id = n.id
+            join sys_user u on a.user_id = u.user_id
+        where n.node_key = #{nodeKey}
+    </select>
+</mapper>
