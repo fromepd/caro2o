@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/caro2o.iml" filepath="$PROJECT_DIR$/.idea/caro2o.iml" />
-      <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi.iml" />
       <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/ruoyi-admin.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-admin/ruoyi-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/ruoyi-common.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-common/ruoyi-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/ruoyi-framework.iml" filepath="$PROJECT_DIR$/caro2o-admin-backend/ruoyi-framework/ruoyi-framework.iml" />

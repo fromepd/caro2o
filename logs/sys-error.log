@@ -1,4 +1,5 @@
-15:52:02.631 [http-nio-9803-exec-1] ERROR c.r.f.w.e.GlobalExceptionHandler - [handleRuntimeException,69] - 请求地址'/login',发生未知异常.
+10:20:51.021 [restartedMain] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,504] - slow sql 1271 millis. SELECT 1 FROM DUAL[]
+10:22:10.774 [http-nio-9803-exec-2] ERROR c.r.f.w.e.GlobalExceptionHandler - [handleRuntimeException,69] - 请求地址'/login',发生未知异常.
 com.ruoyi.common.exception.user.CaptchaExpireException: 验证码已失效
 	at com.ruoyi.framework.web.service.SysLoginService.validateCaptcha(SysLoginService.java:115)
 	at com.ruoyi.framework.web.service.SysLoginService.login(SysLoginService.java:68)
