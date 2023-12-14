@@ -21,3 +21,9 @@ selenium-debug.log
 
 package-lock.json
 yarn.lock
+
+./node_modules
+./dist
+./coverage
+./.idea
+./.vscode
