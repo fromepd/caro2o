@@ -44,3 +44,6 @@ dist/
 !*/build/*.java
 !*/build/*.html
 !*/build/*.xml
+
+
+.idea/
